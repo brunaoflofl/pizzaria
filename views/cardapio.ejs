@@ -16,6 +16,14 @@
                             <p>Preço da pizza: <%= pizza.preco %></p>
                             <button class="btn btn-success">Comprar</button>
                         </div>
+                        
+                        <div class="card-footer">
+                                <form action="/cardapio/deletar/:posicao">
+                                        <button class="btn btn-danger">Excluir</button>
+
+                                    </form>
+
+                        </div>
                     </div>
                 </div>
             <% }) %>

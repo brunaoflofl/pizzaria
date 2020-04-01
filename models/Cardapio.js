@@ -12,6 +12,16 @@ let cardapio = [
 function listarCardapio(){
     return cardapio
 }
+function cadastrarPizza(nome, preco){
+    let novaPizza = {
+        nome,
+        preco,
+        img:'pizza2.jpg'
+    }
+    return cardapio.push(novaPizza)
+}
+function deletarPizza(posicao){
+    return cardapio.splice(posicao, 1)
+}
 
-
-module.exports = {listarCardapio}
+module.exports = {listarCardapio, cadastrarPizza, deletarPizza}
